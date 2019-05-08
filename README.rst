@@ -100,6 +100,9 @@ This is an example of Watchtower integration with Django. In your Django project
                          'stream_name': 'MyStreamName',
                 'formatter': 'aws',
             },
+            'console': {
+                'class': 'logging.StreamHandler',
+            },
         },
         'loggers': {
             'django': {
